@@ -1,4 +1,9 @@
-ae_shape=[784,500,200]
+# pre-processing
+axis : 0
+test_size : 1000
+
+# model architecture
+ae_shape : [115, 80]
 
 # optimizer parameters
 decay : 0.95
@@ -6,7 +11,7 @@ num_decay_steps : 150
 init_learning_rate : 0.005 # if minibatch=True, we recommend 0.005 as initial learning rate. else, 0.03
 
 # training parameters
-num_steps : 1000
+epochs : 1000
 batch_size : 10
 log_every : 10 # write log every N step
 hidden_size : 4
